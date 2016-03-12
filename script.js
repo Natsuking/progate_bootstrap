@@ -75,14 +75,20 @@ $(function(){
 			$(this).addClass('active');
 	});
 
-	$('#contact-submit').submit(function(){
+	$('#contact-form').submit(function(){
 		$('p.error').remove();
-		if($('input,textarea').val()==""){
-			$(this).parent().prepend('<p class="error">入力してください</p>');
-		} else{
-			$("#contact-form").fadeOut();
-			$("#contact-msg").text("お問い合わせありがとうございます。");
-		};
-
+		var error = false;  
+		$('.contact-input').each(function(){
+			// 
+			if($(this).val()==""){
+				$(this).parent().prepend('<p class="error">入力してください</p>');
+				error = true;
+			} 
+		});
+		if (error==false){
+				$("#contact-form").fadeOut();
+				$("#contact-msg").text("お問い合わせありがとうございます。");
+		}
+		return false;
 	});
 });
