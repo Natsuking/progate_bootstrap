@@ -1,0 +1,574 @@
+/*共通のCSS*/
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+body {
+    font-family: 'Noto Sans Japanese', serif;
+}
+
+
+a:hover, a:focus{
+	text-decoration: none;
+	color: white;
+}
+
+.white-msg{
+	color: white;
+}
+
+.swt-progate{
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	display: inline-block;
+	color: #f3f3f3;
+	font-size: 15px;
+	padding: 10px 20px;
+	margin-top: 100px;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+	transition: .6s;
+	cursor: pointer;
+	position: relative;
+}
+
+.swt-progate:hover{
+	color: #f3f3f3;
+	border: 1px solid rgba(255, 255, 255, 1);
+	box-shadow:0px 0px 5px;
+}
+
+
+.jumbotron p{
+	font-size: 18px;
+}
+
+
+
+/*共通のCSS終わり*/
+
+/*headerです。*/
+
+.navbar-brand{
+	font-size: 22px;
+ 	font-weight: 600;
+}
+
+.navbar-default .navbar-nav>li>a{
+	font-weight: 600;
+	color: #323A45;
+	transition: .5s;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+	text-decoration: none;
+	color: #0DC0C0;
+}
+
+.navbar-default .navbar-header>a{
+	color: #777;
+	transition: .8s;
+}
+
+.navbar-default .navbar-header>a:hover{
+	color: #0DC0C0;
+}
+
+
+
+/*title wrapper です。*/
+.title-wrapper{
+	background-image: url(https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/backgrounds/top.jpg); 
+	background-size: cover; 
+	height: 120vh; 
+	padding: 0;
+}
+
+
+
+.title-wrapper > .dark-overlay{
+	background: rgba(0, 0, 0, 0.6);
+	height: 100%;
+}
+
+.title-wrapper > .dark-overlay > h2{
+	margin: 0;
+	padding-top: 180px;
+	color: #f3f3f3;
+  	font-size: 5vw;
+  	font-weight: 200;
+}
+
+
+
+
+.title-wrapper .dark-overlay .middle-p{
+	color: rgba(255, 255, 255, 0.8);
+	padding: 30px 0;
+	font-size: 14px;
+}
+
+.title-wrapper > .dark-overlay > #pro-msg{
+	display: none;
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 10px;
+	padding: 5px 60px;
+	margin-top: -100px;
+}
+
+/*lang-wrapperです。*/
+
+.lang-wrapper > .lang-title > h2{
+	font-size: 30px;
+	padding: 50px 0;
+	font-weight: 300;
+}
+.lang-wrapper > .row{
+	padding-bottom: 50px;
+}
+.lang-wrapper > .row > div {
+	height: 250px;
+}
+
+.lang-wrapper > .row > div > p {
+	display: none;
+}
+
+/*feature-wrapper*/
+.feature-wrapper{
+	padding-bottom: 50px;
+}
+
+/*first-half*/
+
+.feature-wrapper .grey-background{ 
+	background-color: #f4f4f4;
+	margin-bottom: 80px;
+	height: 400px;
+}
+
+.feature-top{
+	padding-top: 30px;
+	height: 500px;
+}
+
+.feature-top > h2{
+	padding: 20px;
+	font-weight: 300;
+}
+/*second-half*/
+.feature-bottom p{
+	color: #323A45;
+}
+
+.feature-bottom .feature-p-title{
+	font-size: 16px;
+}
+
+
+.feature-bottom > .container> .row > div{
+	padding: 0 50px 20px;
+}
+
+
+/*price-wrapper*/
+
+
+.price-wrapper .grey-background{
+	background-color: #f4f4f4;
+	padding-bottom: 50px;
+}
+
+.price-wrapper h2{
+	color: #2d323a;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	font-weight: 300;
+}
+
+.price-wrapper .thumbnail{
+	background-color: white;
+	padding: 20px 15px;
+}
+
+.price-wrapper .caption, 
+.price-wrapper .thumbnail, 
+.price-wrapper a,
+.price-wrapper li{
+	text-align: center;
+	text-decoration: none;
+	list-style: none;
+}
+
+.price-wrapper p{
+	margin: 0;
+	padding: 20px 0;
+	font-size: 30px;
+}
+
+.price-wrapper .price-title{
+	margin-top: 10px;
+	background-color: #323A45;
+	color: white;
+	font-weight: 100;
+}
+
+.price-wrapper .price-tag{
+	padding: 30px 0;
+	background-color: #f4f4f4;
+	color: #323A45;
+}
+
+#price-middle{
+	background-color: #0DC0C0; 
+}
+
+.price-wrapper .price-tag{
+	background-color: #f4f4f4;
+}
+
+.price-wrapper ul{
+	padding: 0 20px;
+}
+
+.price-wrapper li{
+	border-bottom: 1px solid #f4f4f4;
+	padding: 20px 0;
+}
+
+.price-wrapper .swt-price{
+	text-decoration: none;
+	color: #f4f4f4;
+	display: inline-block;
+	font-size: 15px;
+	padding: 15px 35px;
+	margin-top: 25px;
+	margin-bottom: 35px;
+	background-color: #2d323a;
+	border-radius: 5px;
+	transition: .6s;
+	cursor: pointer;
+}
+
+.price-wrapper .swt-price:hover{
+	opacity: 0.9;
+}
+
+
+/*modal*/
+
+.modal-dialog {
+  text-align: center;
+  padding: 20px 0 40px;
+  width: 550px;
+}
+
+.modal-content{
+	background-color: #e6ecf0;
+	border-radius: 10px;
+}
+
+.modal-body h2{
+	margin-bottom: 30px;
+	font-weight: 100;
+	font-size: 25px;
+}
+
+.form-control{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.modal-content textarea{
+	height: 100px;
+	max-height: 150px;
+}
+
+.btn-success{
+	width: 80%;
+	margin: 30px auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-weight: 100;
+	letter-spacing: 2px;
+}
+
+.carousel-inner img{
+	width: 200px;
+	margin: 0 auto;
+}
+
+.mentor-wrapper{
+	position: relative;
+	padding-bottom: 100px;
+}
+.mentor-wrapper h2{
+	font-weight: 300;
+	padding: 50px 0 30px;
+}
+
+.mentor-wrapper h2,
+#mentor .item,
+#mentor img,
+#mentor p,
+#mentor small, {
+	text-align: center;
+}
+
+#mentor small{
+	font-size: 13px;
+}
+
+#mentor ol{
+	padding-top: 100px;
+}
+
+.carousel-indicators li {
+  background-color: #999;
+  border: none;
+}
+
+.carousel-indicators .active {
+  background-color: #444;;
+}
+
+.carousel-inner .item{
+	margin: 0 auto 70px;
+}
+
+.carousel-inner .item p{
+	font-size: 16px;
+}
+
+
+.right-delta{
+	float: right;
+}
+
+.glyphicon-chevron-right{
+	color: black; 
+}
+
+/*Quote*/
+
+.quote-wrapper{
+	background-image:url('https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/backgrounds/night_view.jpg'); 
+	background-size: cover; 
+	height: 400px;
+}
+
+.quote-wrapper > .dark-overlay{
+	background: rgba(0, 0, 0, 0.6);
+	height: 100%;
+}
+
+
+.quote-wrapper h2{
+	color: white;
+	font-weight: 300;
+	font-size: 30px;
+}
+
+.quote-wrapper .facebook{
+	padding-top: 150px;
+}
+
+/*Column*/
+
+.kolumn-wrapper{
+	background-color: #f4f4f4;
+	padding: 50px 0 100px;
+}
+
+.kolumn-wrapper h2{
+	font-weight: 300;
+}
+
+.kolumn-wrapper .kolumn-nav{
+	padding: 20px 0 ;
+}
+
+.kolumn-wrapper .btn-default{
+	border: none;
+	font-size: 18px;
+	font-weight: 200;
+	transition: 0.2s;
+	border-radius: 1px;
+	background-color: white;
+}
+
+
+
+.kolumn-wrapper .center{
+	margin: 0 10px;
+}
+
+.kolumn-wrapper .btn-default:hover{
+	color: white;
+	background-color: #009ca8;
+	opacity: .8;
+}
+
+.kolumn-wrapper .btn-default:focus{
+	border: none;
+	background-color: white;
+}
+
+.kolumn-wrapper .btn-default.active{
+	color: white;
+	background-color: #009ca8;
+	opacity: .8;
+}
+
+.kolumn-wrapper .thumbnail{
+	width: 45%;
+	display: inline-block;
+	vertical-align: top;
+	margin: 20px;
+	/*overflow: hidden;*/
+}
+
+.kolumn-wrapper .img-frame{
+	overflow: hidden;
+}
+
+.kolumn-wrapper img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+
+.kolumn-wrapper img:hover {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+	-webkit-filter: brightness(50%);
+}
+
+
+
+.kolumn-wrapper .thumbnail h3,
+.kolumn-wrapper .thumbnail p,
+.kolumn-wrapper .kolumn-content{
+	text-align: center;
+}
+
+.kolumn-wrapper .thumbnail h3 {
+	font-size: 18px;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.kolumn-wrapper .thumbnail h3:hover {
+	color: #0DC0C0;
+
+}
+
+.kolumn-wrapper .kolumn-content{
+
+}
+
+.kolumn-wrapper .load{
+	margin-top: 100px;
+	font-size: 16px;
+	transition: .2s;
+	cursor: pointer;
+}
+
+.kolumn-wrapper .load:hover{
+	color: #009ca8;
+}
+
+
+/*contact*/
+.contact-wrapper{
+	background-image:url("https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/backgrounds/contact.jpg");
+	background-size: cover;
+}
+
+.contact-wrapper .grey-overlay{
+	background: rgba(0, 0, 0, 0.6);
+	height: 100%;
+	padding-bottom: 100px;
+}
+
+.contact-wrapper input,
+.contact-wrapper textarea{
+	margin: 0;
+	width: 100%;
+	background-color: rgba(250, 250, 250, 0.08);
+	border: none;
+	color: white;
+}
+
+.contact-wrapper .btn-success{
+	width: 100px;
+}
+
+.contact-wrapper h2{
+	padding: 50px;
+}
+.contact-wrapper h4{
+	padding-bottom: 10px;
+}
+.contact-wrapper p{
+	padding-top: 0;
+}
+
+.contact-wrapper p,
+.contact-wrapper h2,
+.contact-wrapper h4,
+.contact-wrapper h5,
+.contact-wrapper span{
+	color: white;
+	font-weight: 100;
+}
+
+.contact-wrapper h2,
+.contact-wrapper h4,
+.contact-wrapper h5{
+	font-weight: 200;
+}
+
+
+.contact-wrapper .prog-statement{
+	line-height: 1.8;
+	margin-bottom: 20px;
+}
+
+.contact-wrapper form{
+	margin: 20px auto;
+}
+
+/*footer*/
+
+.footer-inner{
+  text-align: center;
+}
+
+.white-footer{
+  height: 60%;
+}
+
+.white-footer-content{
+  padding-top: 50px;
+}
+
+.footer-inner p{
+  color: #555;
+  font-size: 32px;
+}
+
+.fa-facebook, .fa-twitter{
+  font-size: 35px;
+  padding: 10px 10px;
+}
+
+.black-footer{
+  background-color: #222;
+  height: 40%;
+}
+
+.copyright{
+	padding: 20px 0;
+	color: white;
+	font-weight: 100;
+}
